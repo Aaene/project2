@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="sytle.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Nthabi</title>
+    </head>
+    <body>
+        <h1 class="valentine">But firstly...</h1>
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <p class="words line1">Happy Valentine's Day Pretty Girl &#10084;</p>
+                    <p class="words line2">You mean a lot to me, I know I have made mistakes, and I regret hurting you in any way. Please know that my love for you is genuine and my heart is always with you.</p>
+                    <p class="words line3">Today, I just want to remind you how much I care and how thankful I am for you. I love you &#129294;</p>
+                </div>
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="open">Open</button>
+            <button id="reset">Close</button>
+        </div>
+        <div class="song-transition">
+            <button id="next">Thank you next!!</button>
+        </div>
+        
+        <script src="trouble.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#next").click(function(){
+                    $("body").fadeOut(1000, function(){
+                        window.location.href = "song.html";
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

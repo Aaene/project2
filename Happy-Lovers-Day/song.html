@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nthabi</title>
+    <link rel="stylesheet" href="song.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="record-player">
+      <div id="player-container"></div>
+      
+      <div class="intro-box">
+        <h3 class="episode-title">Soo on today's episode we are going to be listening to the amazing <span class="doechii">Grammy-winning Doechiii</span> and <span class="ab-soul">Ab-Soul!!</span> </h3>
+        
+        <div class="song-info">
+          <p class="song-label"> The song's called<span class="song-name">"Myself, Me and I"</span></p>
+          <p class="song-description">This song is all about <b>self-love</b>, <b>confidence</b>, and <b>putting yourself first</b> </p>
+          <p class="song-reminder">I want you to always <span class="highlight-quote">prioritize yourself</span>, embrace your strength, and take care of your happiness. <b>You deserve it, girl! ❤️</b></p>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/watch?v=kbnyavkOf4o" target="_blank">
+      <button id="play-button">Click to play song</button>
+    </a>
+      <audio id="love-song" src="love song.m4a"></audio>
+      <script src="song.js"></script>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("body").hide().fadeIn(1000);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(242, 210, 189);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #ff6b6b;
+    margin-top: 20px;
+  }
+  
+  #vinyl-container {
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  svg {
+    width: 500px;
+    height: 600px;
+  }
+  
+  #play-button {
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #FF6863;
+    border-radius: 4px;
+    color: #FF6863;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-top: 100px;
+    padding: 10px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 150px;
+    outline: none;
+  }
+  
+  #play-button:hover {
+    background-color: #ff3b3b;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin {
+    animation: spin 4s linear infinite;
+  }
+  .intro-box {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    background-color:rgb(242, 210, 189) ;
+    color:rgb(242, 210, 189);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.episode-title {
+    font-size: 26px;
+    font-weight: bold;
+    color:rgb(92, 64, 51);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.song-info {
+    text-align: left;
+    padding: 15px;
+    background: rgb(242, 210, 189);
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #FFE4C4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.song-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(92, 64, 51);
+}
+
+.song-description {
+    font-size: 18px;
+    font-style: italic;
+    color:rgb(92, 64, 51) ;
+    margin-top: 10px;
+}
+
+.song-reminder {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(92, 64, 51);
+    margin-top: 10px;
+}
+
+.song-name {
+    font-weight: bold;
+    color: #301e03;
+    font-size: 22px;
+}
+
+.doechii {
+    color: rgb(92, 64, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ab-soul {
+    color: rgb(92, 64, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.highlight-quote {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(92, 64, 51);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+    font-style: italic;
+    color:rgb(92, 64, 51);
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
